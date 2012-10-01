@@ -89,7 +89,12 @@
 	column-gap: @gap;
 }
 
-
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+}
 
 
 /* handy shortcuts */
@@ -105,14 +110,6 @@
 .size(@width: 20px, @height: 20px){
 	width: @width;
 	height: @height;
-}
-
-.clear{/* for use on :after */
-	content: " "; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;	
 }
 
 
